@@ -1,0 +1,6 @@
+numpy<2.0
+pandas
+torch
+torchvision
+xarray==2025.1.2
+zarr==2.18.4
