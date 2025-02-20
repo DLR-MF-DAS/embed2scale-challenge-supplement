@@ -81,7 +81,7 @@ class E2SChallengeDataset(Dataset):
         
         for modality, sample_path in zip(self.modalities, sample_paths):
             season_index = xr.DataArray(seasons, dims='time')
-            data[modality] = xr.open_zarr(sample_path,consolidated=False).isel(time=season_index)[self.dataset_name].values
+            data[modality] = xr.open_zarr(sample_path).isel(time=season_index)[self.dataset_name].values
 
         n_bands_per_modality = {m: d.shape[-3] for m, d in data.items()}
         start_ind_of_modality = {m: n for m, n in zip(self.modalities, [0] + np.cumsum(list(n_bands_per_modality.values())).tolist())}
