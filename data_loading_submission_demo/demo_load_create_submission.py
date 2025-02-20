@@ -76,7 +76,7 @@ dataset_ssl4eo = SSL4EOS12Dataset(
     concat=True,  # Concatenate all modalities along the band dimension.
     single_timestamp=False,  # Load single timestamps rather than time series.
     num_batch_samples=1,  # optional, subsample samples in each zarr file.
-    samples_per_zarr=1
+    num_timestamps=4  # optional, number of seasons to include
 )
 
 # Print dataset length

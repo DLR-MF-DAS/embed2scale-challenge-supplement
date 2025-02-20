@@ -8,9 +8,6 @@ from pathlib import Path
 from torch.utils.data import Dataset
 from torchvision import transforms
 
-SAMPLES_PER_ZARR = 64
-TIMESTAMPS = 4
-
 S2L1C_MEAN = [2607.345, 2393.068, 2320.225, 2373.963, 2562.536, 3110.071, 3392.832, 3321.154, 3583.77, 1838.712, 1021.753, 3205.112, 2545.798]
 S2L1C_STD = [786.523, 849.702, 875.318, 1143.578, 1126.248, 1161.98, 1273.505, 1246.79, 1342.755, 576.795, 45.626, 1340.347, 1145.036]
 
@@ -33,8 +30,8 @@ class SSL4EOS12Dataset(Dataset):
             transform: transforms.Compose | None = None,
             concat: bool = False,
             single_timestamp: bool = False,
-            num_batch_samples: int = SAMPLES_PER_ZARR,
-            samples_per_zarr: int = SAMPLES_PER_ZARR
+            num_timestamps: int = 4,
+            num_batch_samples: int | None = None,
     ):
         """
         Dataset class for the SSL4EOS12 V1.1 dataset.
@@ -45,15 +42,12 @@ class SSL4EOS12Dataset(Dataset):
         :param concat: Concatenate all modalities along the band dimension.
         :param single_timestamp: Loads a single timestamp instead of all four timestamps.
         :param num_batch_samples: Subsample samples in zarr files, e.g. if GPU memory is not sufficient.
-        :param samples_per_zarr: Number of samples per zarr file. Defaults to 64.
         """
         self.data_dir = Path(data_dir)
         self.modalities = modalities or ['S2L1C', 'S2L2A', 'S1GRD']
         self.transform = transform
         self.concat = concat
-        self.samples_per_zarr = samples_per_zarr
-        self.num_batch_samples = num_batch_samples if num_batch_samples <= samples_per_zarr else samples_per_zarr
-        assert 1 <= num_batch_samples <= SAMPLES_PER_ZARR, f'num_batch_samples must be between 1 and {SAMPLES_PER_ZARR}'
+        self.num_batch_samples = num_batch_samples
 
         if split_file is not None:
             with open(split_file, 'r') as f:
@@ -63,9 +57,10 @@ class SSL4EOS12Dataset(Dataset):
             self.samples = [f for f in self.samples if f.endswith('.zarr.zip')]
 
         self.single_timestamp = single_timestamp
+        self.num_timestamps = num_timestamps
         if single_timestamp:
             # Repeat samples to include all timestamps in the dataset
-            self.samples = np.repeat(self.samples, TIMESTAMPS)
+            self.samples = np.repeat(self.samples, num_timestamps)
 
     def __len__(self):
         return len(self.samples)
@@ -82,12 +77,13 @@ class SSL4EOS12Dataset(Dataset):
             ds = xr.open_zarr(self.data_dir / modality / self.samples[idx])
             if self.single_timestamp:
                 # Select a single timestamp
-                ds = ds.isel(time=idx % TIMESTAMPS)
+                ds = ds.isel(time=idx % self.num_timestamps)
             data[modality] = ds.bands.values
 
-        if self.num_batch_samples != self.samples_per_zarr:
+        num_samples = data[self.modalities[0]].shape[0]
+        if self.num_batch_samples is not None and self.num_batch_samples != num_samples:
             # Subsample samples
-            selected = random.sample(list(range(self.samples_per_zarr)), k=self.num_batch_samples)
+            selected = random.sample(list(range(num_samples)), k=self.num_batch_samples)
             for modality in self.modalities:
                 data[modality] = data[modality][selected]
 
