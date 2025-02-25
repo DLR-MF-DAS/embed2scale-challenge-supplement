@@ -1,0 +1,41 @@
+name: Merge to Main
+
+on:
+  push:
+    branches:
+      - update_readme
+
+jobs:
+  merge-to-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout push_branch
+        uses: actions/checkout@v4
+        with:
+          ref: update_readme
+
+      - name: Set up Git
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Configure Git user
+        run: |
+          git config --global user.name "embed2scale"
+          git config --global user.email "embed2scale@embed2scale.eu"
+
+      - name: Fetch the latest main branch
+        run: |
+          git fetch origin main
+
+      - name: Merge push_branch into main
+        run: |
+          git checkout main
+          git merge origin/update_readme --no-ff --commit -m "Merge README update into main"
+
+      - name: Push changes
+        run: |
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
