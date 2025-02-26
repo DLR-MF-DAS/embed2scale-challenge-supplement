@@ -7,20 +7,30 @@ import pandas as pd
 
 from torchvision import transforms
 from torch.utils.data import DataLoader
+
 from challenge_dataset import E2SChallengeDataset, collate_fn
 from ssl4eos12_dataset import SSL4EOS12Dataset, S2L1C_MEAN, S2L1C_STD, S2L2A_MEAN, S2L2A_STD, S1GRD_MEAN, S1GRD_STD
 
 # %% Configurations
 modalities = ['s2l2a', 's2l1c', 's1']
 
+# 
+path_to_data = '/path/to/challenge/data/'
+path_to_output_file = 'path/to/output/file.csv'
+
+write_result_to_file = False  # Set to True to trigger saving of the csv at the end.
+
+# Create data transformation
+# Get mean and standard deviations for the modealities in the correct order
 mean_data = S2L2A_MEAN + S2L1C_MEAN + S1GRD_MEAN
 std_data = S2L2A_STD + S2L1C_STD + S1GRD_STD
 
-path_to_data = '/path/to/challenge/data/'
-
 data_transform = transforms.Compose([
+    # Add additional transformation here
     transforms.Normalize(mean=mean_data, std=std_data)
 ])
+
+# Note that both E2SChallengeDataset and SSL4EOS12Dataset outputs torch tensors, so there is no need to a ToTensor transform.
 
 # %% Load data with custom dataloader
 
