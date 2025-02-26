@@ -13,7 +13,7 @@ jobs:
       - name: Checkout push_branch
         uses: actions/checkout@v4
         with:
-          ref: update_readme
+          featch-depth: 0
 
       - name: Set up Git
         uses: actions/setup-python@v2
