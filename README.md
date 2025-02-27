@@ -6,10 +6,10 @@ The repository is structured as follows:
 - `data_loading_submission_demo/`: Contains a demo how to load the challenge data as well as structuring embeddings to be ready for submission on eval.ai.
 
 # Leaderboard
-Leaderboard updated: 2025-02-26 16:56:46
+Leaderboard updated: 2025-02-27 10:20:03
     
 | Rank | Team | Mean Q |
 | :----: | :---- | :------: |
-| 1 | Host\_76534\_Team | -6.614 |
+| 1 | Host\_76534\_Team | 0.713 |
 
 
