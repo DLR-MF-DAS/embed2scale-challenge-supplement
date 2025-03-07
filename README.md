@@ -7,4 +7,4 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2453/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-06 20:41:16
+Leaderboard updated: 2025-03-07 07:25:37
