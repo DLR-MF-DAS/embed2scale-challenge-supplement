@@ -11,7 +11,7 @@ The repository is structured as follows:
 
 ## FAQ
 
-In case you have question, pls open an issue here. Below a list of insights from questions you posed:
+In case you have question, please open an issue here. Below a list of insights from questions you posed:
 
 - [#1](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/1): relevant datasets $D^{(\ast)}$ on HuggingFace :
     * *SSL4EO-S12-v1.1*: pre-training of your encoder $E(D)=X=(x_1,x_2,\dots,x_{1024})$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-v1.1
@@ -31,4 +31,12 @@ imagery.
   | `S2L1C`           | `s2l1c`                 |
   | `S2L2A`           | `s2l2a`                 |
   | `S2RGB`           | `-`                     |
-  
+- [#5](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/5): *How should I interpret the `Stdout file` and `Stderr file` which I find under `My Submissions` on eval.ai?*
+The `Stdout file` contains the final status of the submission from our evaluation in case there were no breaking errors during the evaluation. In addition to the `q_mean` value also shown on the leaderboard, there are the following three fields and their explanations:<br>
+`status: Completed.` means the submission was processed and evaluated without issues.<br>
+`"more_than_3_LP_failed_for_single_downstream_task": false` means that fewer than 3 linear probings failed during any downstream task evaluation. We allow for up to 3 (out of 10) to fail, i.e. produce a NaN value. More than 3 would immediately break the evaluation and return an error.<br>
+`"zarr_zip_not_removed_from_id_column": false` is a simple check that ".zarr.zip" is removed from the challenge data file names by the participants. Forgetting to remove this is not a breaking error, we will remove it ourselves. The reason for this message in the `Stdout file` is to notify that this was forgotten and it is therefore a good idea to verify that no other instructions were missed.<br>
+The `Stderr file` is empty if there was no breaking errors.<br>
+In case there was a breaking error, the submission will be shown with the status `Failed` ounder `My Submissions`. In this case, the `Stdout file` will be empty while the `Stderr file` will provide the error message.
+- [#6](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/6): *Are there any differences in data distribution between the SSL4EO-S12-downstream and SSL4EO-S12 v1.1 data?*<br>
+Yes, the two datasets are sampled at different locations and therefore have different distributions. In the [`challenge_dataset.py`](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/challenge_dataset.py) file, the means and standard deviations are now updated to show the means and standard deviations for the SSL4EO-S12-downstream data (initially, the means and stds for SSL4EO-S12 v1.1 were copied to this file. __If you cloned the repository before 20250311 16:30 and want to use the values calculated by us, please pull the latest changes of this repository__.)
