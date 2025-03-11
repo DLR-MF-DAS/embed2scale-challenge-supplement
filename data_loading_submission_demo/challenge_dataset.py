@@ -6,6 +6,8 @@ import xarray as xr
 import numpy as np
 from typing import List
 
+# Mean and standard devation for the challenge data.
+# Note that these are different from the SSL4EO-S12 v1.1 moments.
 S1GRD_MEAN = [-11.834, -19.243]
 S1GRD_STD = [4.305, 5.479]
 
