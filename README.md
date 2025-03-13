@@ -7,7 +7,7 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-13 10:30:57
+Leaderboard updated: 2025-03-13 12:47:23
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -57,3 +57,5 @@ Yes, the locations in the two datasets are sampled differently and therefore hav
 The custom leaderboard shows the latest submission from each participating team. It also does not take into account the `Public` or `Private` settings during submission and will show the latest one regardless of this setting. __To ensure that you rank as high as possible, resubmit your best submission as your very last submission before the end of each challenge phase__.
 - *Why is my `Private` submission showing up on the [custom leaderboard](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement)?*<br>
 Please see the previous answer.
+- *Does the E2S challenge put any restrictions on team size?* <br>
+No, you are free to collaborate as you prefer. However, keep in mind that you probably do not wanna inflate a potential paper associated with your (winning) solution.
