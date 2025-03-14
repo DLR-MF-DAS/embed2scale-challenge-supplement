@@ -7,14 +7,14 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-14 11:17:22
+Leaderboard updated: 2025-03-14 12:42:43
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
 | :----: | :---- | :------: |
-| 1 | AI4G Intern Squad | 3.659 |
-| 2 | Baseline mean embeddings | -1.664 |
-| 3 | Host\_94421\_Team | -1.570 |
+| 1 | Baseline mean embeddings | -1.664 |
+| 2 | Host\_94421\_Team | -1.570 |
+| 3 | AI4G Intern Squad | -7.287 |
 | 4 | Baseline random embeddings | -8.227 |
 
 
