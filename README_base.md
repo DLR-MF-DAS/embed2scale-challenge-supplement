@@ -46,4 +46,4 @@ The custom leaderboard shows the latest submission from each participating team.
 - *Why is my `Private` submission showing up on the [custom leaderboard](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement)?*<br>
 Please see the previous answer.
 - *Does the E2S challenge put any restrictions on team size?* <br>
-No, you are free to collaborate as you prefer. However, keep in mind that you probably do not wanna inflate a potential paper associated with your (winning) solution.
+No, you are free to collaborate as you prefer. However, keep in mind that you probably do not wanna inflate a potential paper associated with your (winning) solution. For the presentation of the winning solution at CVPR we expect one or two of your team mates to represent.
