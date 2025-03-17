@@ -7,7 +7,7 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-16 12:36:40
+Leaderboard updated: 2025-03-17 08:49:07
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -54,8 +54,10 @@ In case there was a breaking error, the submission will be shown with the status
 - [GH issue #6](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/6): *Are there any differences in data distribution between the SSL4EO-S12-downstream and SSL4EO-S12 v1.1 data?*<br>
 Yes, the locations in the two datasets are sampled differently and therefore have different distributions. In the [`challenge_dataset.py`](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/challenge_dataset.py) file now shows the means and standard deviations for the SSL4EO-S12-downstream data (after 2025-03-11 16:30, before this, the SSL4EO-S12 v1.1 stats were given). You are free to use any normalization/transformation, e.g. the SSL4EO-S12 v1.1 found [here](https://github.com/DLR-MF-DAS/SSL4EO-S12-v1.1).
 - *Why do only one of my submissions show up on the [custom leaderboard](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement)?*<br>
-The custom leaderboard shows the latest submission from each participating team. It also does not take into account the `Public` or `Private` settings during submission and will show the latest one regardless of this setting. __To ensure that you rank as high as possible, resubmit your best submission as your very last submission before the end of each challenge phase__.
-- *Why is my `Private` submission showing up on the [custom leaderboard](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement)?*<br>
-Please see the previous answer.
+The custom leaderboard shows the latest submission from each participating team. __To ensure that you rank as high as possible, resubmit your best submission as your very last submission before the end of each challenge phase__.
+- *Will my private submissions show up on the custom leaderboard?*<br>
+No, only public submissions are shown on the custom leaderboard.
 - *Does the E2S challenge put any restrictions on team size?* <br>
-No, you are free to collaborate as you prefer. However, keep in mind that you probably do not wanna inflate a potential paper associated with your (winning) solution.
+No, you are free to collaborate as you prefer. However, keep in mind that you probably do not wanna inflate a potential paper associated with your (winning) solution. For the presentation of the winning solution at CVPR we expect one or two of your team mates to represent.
+- [GH issue #8](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/8): *Help me understand the quality score $Q_t$?*<br>
+$Q_t=A_t/\Delta A_t$ one may interpret as a signal-to-noise ratio where $A_t$ is the mean accuracy of a given (secret) downstream task $t$ and $\Delta A_t$ specifies the fluctuation of $A_t$ when the linear probing function $f(X)=\hat y$ is trained multiple times through k-fold cross-validation. Technically, $Q_t\propto A_t/(\Delta A_t+\epsilon)$ with $\epsilon>0$ such that the maximum value of $Q_t$ is `100`. However, since we utilize $R^2$ for regression tasks, $Q_t$ may turn negative indicating that linear probing performs even worse than simply predicting the mean value of all labels for that downstream task.
