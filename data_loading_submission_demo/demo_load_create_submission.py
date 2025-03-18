@@ -124,13 +124,15 @@ def str_format_np_array(arr):
 def create_submission_from_dict(emb_dict):
     """Assume dictionary has format {hash-id0: embedding0, hash-id1: embedding1, ...}
     """
-    df_submission = pd.DataFrame(data=[[k, str_format_np_array(e)] for k, e in emb_dict.items()], 
-                                 columns=['id', 'embedding'], dtype=str)
+    df_submission = pd.DataFrame.from_dict(emb_dict, orient='index')
+
+    # Reset index with name 'id'
+    df_submission.index.name = 'id'
+    df_submission.reset_index(drop=False, inplace=True)
         
     return df_submission
-
+    
 # Randomly generate embeddings from normal distribution.
-
 create_n_embeddings = 10
 
 embedding_dim = 1024
