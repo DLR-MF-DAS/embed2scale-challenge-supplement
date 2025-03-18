@@ -7,7 +7,7 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-17 08:52:49
+Leaderboard updated: 2025-03-18 13:21:39
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -15,7 +15,8 @@ __Dev phase leaderboard__
 | 1 | AI4G Intern Squad | 0.676 |
 | 2 | Baseline mean embeddings | -1.401 |
 | 3 | Host\_94421\_Team | -1.570 |
-| 4 | Baseline random embeddings | -10.253 |
+| 4 | KTH and Friends | -8.003 |
+| 5 | Baseline random embeddings | -10.253 |
 
 
 
@@ -52,8 +53,8 @@ The `Stdout file` contains the final status of the submission from our evaluatio
 The `Stderr file` is empty if there was no breaking errors.<br>
 In case there was a breaking error, the submission will be shown with the status `Failed` under `My Submissions`. In this case, the `Stdout file` will be empty while the `Stderr file` will provide the error message.
 - [GH issue #6](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/6): *Are there any differences in data distribution between the SSL4EO-S12-downstream and SSL4EO-S12 v1.1 data?*<br>
-Yes, the locations in the two datasets are sampled differently and therefore have different distributions. In the [`challenge_dataset.py`](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/challenge_dataset.py) file now shows the means and standard deviations for the SSL4EO-S12-downstream data (after 2025-03-11 16:30, before this, the SSL4EO-S12 v1.1 stats were given). You are free to use any normalization/transformation, e.g. the SSL4EO-S12 v1.1 found [here](https://github.com/DLR-MF-DAS/SSL4EO-S12-v1.1).
-- *Why do only one of my submissions show up on the [custom leaderboard](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement)?*<br>
+Yes, there is one main difference in that the SSL4EO-S12 v1.1 shifts the S2 channels up by 1000 in order to be compliant with the latest ESA processing. The Challenge data does not have this shift in the zarr files, but the [`challenge_dataset.py`](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/challenge_dataset.py) there is the flag `shift_s2_channels` which sets configures the dataset to apply the shift. This is by default True in order to align with SSL4EO-S12 v1.1. We also provide the mean and standard deviations for both the raw challenge data, and the means and standard deviations from SSL4EO-S12 v1.1.
+- *Why does only one of my submissions show up on the [custom leaderboard](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement)?*<br>
 The custom leaderboard shows the latest submission from each participating team. __To ensure that you rank as high as possible, resubmit your best submission as your very last submission before the end of each challenge phase__.
 - *Will my private submissions show up on the custom leaderboard?*<br>
 No, only public submissions are shown on the custom leaderboard.
