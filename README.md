@@ -7,7 +7,7 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-18 13:22:55
+Leaderboard updated: 2025-03-19 13:44:21
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -28,7 +28,10 @@ In case you have question, please open an issue here. Below a list of insights f
 
 - [GH issue #1](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/1): relevant datasets $D^{(\ast)}$ on HuggingFace:<br>
     * *SSL4EO-S12-v1.1*: pre-training of your encoder $E(D)=X=(x_1,x_2,\dots,x_{1024})$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-v1.1
-    * *SSL4EO-S12-downstream*: downstream evaluation $f(X)=f\left(E(D^\ast)\right)=\sum_ia_ix_i=\hat y$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream
+    * *SSL4EO-S12-downstream*: downstream evaluation $f(X)=f\left(E(D^\ast)\right)=a_0+\sum_ia_ix_i=\hat y$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream
+- [GH issue #12](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/12):
+  *The [E2S Eval.AI webpage](https://eval.ai/web/challenges/challenge-page/2465) states linear probing as in $f(X)=\sum_ia_ix_i$. Do I need to include a constant feature $x_1=1$ in my embedding $X$ to account for a bias term?*<br>
+  No, our linear probing automatically accounts for a bias term.
 - [GH issue #2](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/2):
   *The pretraining dataset SSL4EO-S12-v1.1 contains metadata on georeferencing. May my encoder* $E$ *utilize such information for compression?*<br>
   No, the SSL4EO-S12-downstream dataset does not provide georeferencing information. The challenge intents to test lossy neural compression on multiple remote sensing modalities without geographic information.
@@ -52,7 +55,7 @@ The `Stdout file` contains the final status of the submission from our evaluatio
 `"zarr_zip_not_removed_from_id_column": false` is a simple check that ".zarr.zip" is removed from the challenge data file names by the participants. Forgetting to remove this is not a breaking error, we will remove it ourselves. The reason for this message in the `Stdout file` is to notify that this was forgotten and it is therefore a good idea to verify that no other instructions were missed.<br>
 The `Stderr file` is empty if there was no breaking errors.<br>
 In case there was a breaking error, the submission will be shown with the status `Failed` under `My Submissions`. In this case, the `Stdout file` will be empty while the `Stderr file` will provide the error message.
-- [GH issue #6](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/6): *Are there any differences in data distribution between the SSL4EO-S12-downstream and SSL4EO-S12 v1.1 data?*<br>
+- [GH issue #6](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/6) and [GH issue #10](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/10): *Are there any differences in data distribution between the SSL4EO-S12-downstream and SSL4EO-S12 v1.1 data?*<br>
 Yes, there is one main difference in that the SSL4EO-S12 v1.1 shifts the S2 channels up by 1000 in order to be compliant with the latest ESA processing. The Challenge data does not have this shift in the zarr files, but the [`challenge_dataset.py`](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/challenge_dataset.py) there is the flag `shift_s2_channels` which sets configures the dataset to apply the shift. This is by default True in order to align with SSL4EO-S12 v1.1. We also provide the mean and standard deviations for both the raw challenge data, and the means and standard deviations from SSL4EO-S12 v1.1.
 - *Why does only one of my submissions show up on the [custom leaderboard](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement)?*<br>
 The custom leaderboard shows the latest submission from each participating team. __To ensure that you rank as high as possible, resubmit your best submission as your very last submission before the end of each challenge phase__.
@@ -64,3 +67,4 @@ No, you are free to collaborate as you prefer. However, keep in mind that you pr
 $Q_t=A_t/\Delta A_t$ one may interpret as a signal-to-noise ratio where $A_t$ is the mean accuracy of a given (secret) downstream task $t$ and $\Delta A_t$ specifies the fluctuation of $A_t$ when the linear probing function $f(X)=\hat y$ is trained multiple times through k-fold cross-validation. Technically, $Q_t\propto A_t/(\Delta A_t+\epsilon)$ with $\epsilon>0$ such that the maximum value of $Q_t$ is `100`. However, since we utilize $R^2$ for regression tasks, $Q_t$ may turn negative indicating that linear probing performs even worse than simply predicting the mean value of all labels for that downstream task.
 - *How are the non-competing baselines created?*<br>
 The `Baseline mean embeddings` is created with [baseline_compression_mean.ipynb](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/baseline_compression_mean.ipynb) and `Baseline random embeddings` is created with [demo_load_create_submission.ipynb](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/demo_load_create_submission.ipynb). The `Host_94421_Team` submissions can be both our own development as well as test submissions.
+
