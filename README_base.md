@@ -1,5 +1,5 @@
-# embed2scale-challenge-supplement
-Supplementary information for the [embed2scale challenge](https://eval.ai/web/challenges/challenge-page/2465/overview). This repo contains the leaderboard for the challenge, documentation, demos for loading and creating submissions, and more.
+# Embed2Scale Challenge - supplementary material
+Supplementary information for the [Embed2Scale (E2S) challenge](https://eval.ai/web/challenges/challenge-page/2465) as part of the [2025 CVPR EARTHVISION workshop](https://www.grss-ieee.org/events/earthvision-2025) co-organized by the Horizon Europe [_Embed2Scale_ consortium](https://embed2scale.eu). This repo contains the (customized) leaderboard for the challenge, documentation, demos for loading and creating submissions, frequently asked questions based on GitHub issues you can open, and more.
 
 The repository is structured as follows:
 - The Embed2Scale Challenge leaderboard is presented below, ranked by aggregating the rankings on the individual downstream tasks. Please refer to [here](https://eval.ai/web/challenges/challenge-page/2465/evaluation) for details on the evaluation and ranking.
