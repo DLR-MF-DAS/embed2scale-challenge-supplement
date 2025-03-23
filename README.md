@@ -7,16 +7,16 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-23 14:18:11
+Leaderboard updated: 2025-03-23 18:23:07
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
 | :----: | :---- | :------: |
 | 1 | Degas AI | 14.686 |
 | 2 | AI4G Intern Squad | 10.335 |
-| 3 | TeamGrelous | -0.592 |
+| 3 | Host\_94421\_Team | -1.570 |
 | 4 | Baseline mean embeddings | -1.401 |
-| 5 | Host\_94421\_Team | -1.570 |
+| 5 | TeamGrelous | 0.384 |
 | 6 | KTH and Friends | -3.209 |
 | 7 | Baseline random embeddings | -10.253 |
 
