@@ -21,9 +21,9 @@ In case you have question, please open an issue here. Below a list of insights f
       + *summer*: 6, 7, 8
       + *fall*: 9, 10, 11
       + *winter*: 12, 1, 2
-- [GH issue #12](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/12):
+- [GH issue #12](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/12) and [GH issue #7](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/7):
   *The [E2S Eval.AI webpage](https://eval.ai/web/challenges/challenge-page/2465) states linear probing as in* $f(X)=\sum_ia_ix_i$. *Do I need to include a constant feature* $x_1=1$ *in my embedding* $X$ *to account for a bias term?*<br>
-  No, our linear probing automatically accounts for a bias term.
+  No, our linear probing automatically accounts for a bias term. BTW, we normalize your embeddings $X$ by a global, overall mean shift and division by the corresponding standard deviation over all embedding values submitted.
 - [GH issue #2](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/2):
   *The pretraining dataset SSL4EO-S12-v1.1 contains metadata on georeferencing. May my encoder* $E$ *utilize such information for compression?*<br>
   No, the SSL4EO-S12-downstream dataset does not provide georeferencing information. The challenge intents to test lossy neural compression on multiple remote sensing modalities without geographic information.
