@@ -17,10 +17,10 @@ In case you have question, please open an issue here. Below a list of insights f
     * *SSL4EO-S12-v1.1*: pre-training of your encoder $E(D)=X=(x_1,x_2,\dots,x_{1024})$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-v1.1
       + timestamp metadata info in ZARR files, seasons in linear order in range of years 2020 to 2021
     * *SSL4EO-S12-downstream*: downstream evaluation $f(X)=f\left(E(D^\ast)\right)=a_0+\sum_ia_ix_i=\hat y$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream , timestamp ordering in buckets of months of the year:
-      + *spring* (northern hemisphere): 3, 4, 5
-      + *summer*: 6, 7, 8
-      + *fall*: 9, 10, 11
-      + *winter*: 12, 1, 2
+      1. *spring* (northern hemisphere): Mar - May
+      2. *summer*: Jun - Aug
+      3. *fall*: Sep - Nov
+      4. *winter*: Dec - Feb
 - [GH issue #12](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/12) and [GH issue #7](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/7):
   *The [E2S Eval.AI webpage](https://eval.ai/web/challenges/challenge-page/2465) states linear probing as in* $f(X)=\sum_ia_ix_i$. *Do I need to include a constant feature* $x_1=1$ *in my embedding* $X$ *to account for a bias term?*<br>
   No, our linear probing automatically accounts for a bias term. BTW, we normalize your embeddings $X$ by a global, overall mean shift and division by the corresponding standard deviation over all embedding values submitted.
