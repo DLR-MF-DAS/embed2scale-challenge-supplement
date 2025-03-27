@@ -7,7 +7,7 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-27 10:40:33
+Leaderboard updated: 2025-03-27 10:43:00
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -78,4 +78,4 @@ No, you are free to collaborate as you prefer. However, keep in mind that you pr
 $Q_t=A_t/\Delta A_t$ one may interpret as a signal-to-noise ratio where $A_t$ is the mean accuracy of a given (secret) downstream task $t$ and $\Delta A_t$ specifies the fluctuation of $A_t$ when the linear probing function $f(X)=\hat y$ is trained multiple times through k-fold cross-validation. Technically, $Q_t\propto A_t/(\Delta A_t+\epsilon)$ with $\epsilon>0$ such that the maximum value of $Q_t$ is `100`. However, since we utilize $R^2$ for regression tasks, $Q_t$ may turn negative indicating that linear probing performs even worse than simply predicting the mean value of all labels for that downstream task.
 - *How are the non-competing baselines created?*<br>
 The `Baseline mean embeddings` is created with [baseline_compression_mean.ipynb](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/baseline_compression_mean.ipynb) and `Baseline random embeddings` is created with [demo_load_create_submission.ipynb](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/demo_load_create_submission.ipynb). The `Host_94421_Team` submissions can be both our own development as well as test submissions.
-- : *The seasonal order of data cubes in the `SSL4EO-S12-*` datasets is: spring, summer, fall, winter*?<br> Yes.
+- *The seasonal order of data cubes in the `SSL4EO-S12-*` datasets is: spring, summer, fall, winter*?<br> Yes.
