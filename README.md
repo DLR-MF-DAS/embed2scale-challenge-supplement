@@ -1,5 +1,5 @@
 # Embed2Scale Challenge - supplementary material
-Supplementary information for the [Embed2Scale (E2S) challenge](https://eval.ai/web/challenges/challenge-page/2465) as part of the [2025 CVPR EARTHVISION workshop](https://www.grss-ieee.org/events/earthvision-2025) co-organized by the Horizon Europe [_Embed2Scale_ consortium](https://embed2scale.eu). This repo contains the (customized) leaderboard for the challenge, documentation, demos for loading and creating submissions, frequently asked questions based on GitHub issues you can open, and more.
+Supplementary information for the [Embed2Scale (E2S) challenge](https://eval.ai/web/challenges/challenge-page/2465) as part of the [2025 CVPR EARTHVISION workshop](https://www.grss-ieee.org/events/earthvision-2025) co-organized by the Horizon Europe [Embed2Scale_ consortium](https://embed2scale.eu). This repo contains the (customized) leaderboard for the challenge, documentation, demos for loading and creating submissions, frequently asked questions based on GitHub issues you can open, and more.
 
 The repository is structured as follows:
 - The Embed2Scale Challenge leaderboard is presented below, ranked by aggregating the rankings on the individual downstream tasks. Please refer to [here](https://eval.ai/web/challenges/challenge-page/2465/evaluation) for details on the evaluation and ranking.
@@ -7,7 +7,7 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-26 17:16:45
+Leaderboard updated: 2025-03-27 10:40:33
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -31,12 +31,17 @@ Note that `Host_94421_Team`, `Baseline mean embeddings` and `Baseline random emb
 
 In case you have question, please open an issue here. Below a list of insights from questions you posed:
 
-- [GH issue #1](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/1): relevant datasets $D^{(\ast)}$ on HuggingFace:<br>
+- [GH issue #1](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/1) and [GH issue #13](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/13): relevant datasets $D^{(\ast)}$ on HuggingFace:<br>
     * *SSL4EO-S12-v1.1*: pre-training of your encoder $E(D)=X=(x_1,x_2,\dots,x_{1024})$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-v1.1
-    * *SSL4EO-S12-downstream*: downstream evaluation $f(X)=f\left(E(D^\ast)\right)=a_0+\sum_ia_ix_i=\hat y$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream
-- [GH issue #12](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/12):
+      + timestamp metadata info in ZARR files, seasons in linear order in range of years 2020 to 2021
+    * *SSL4EO-S12-downstream*: downstream evaluation $f(X)=f\left(E(D^\ast)\right)=a_0+\sum_ia_ix_i=\hat y$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream , timestamp ordering in buckets of months of the year:
+      1. *spring* (northern hemisphere): Mar - May
+      2. *summer*: Jun - Aug
+      3. *fall*: Sep - Nov
+      4. *winter*: Dec - Feb
+- [GH issue #12](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/12) and [GH issue #7](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/7):
   *The [E2S Eval.AI webpage](https://eval.ai/web/challenges/challenge-page/2465) states linear probing as in* $f(X)=\sum_ia_ix_i$. *Do I need to include a constant feature* $x_1=1$ *in my embedding* $X$ *to account for a bias term?*<br>
-  No, our linear probing automatically accounts for a bias term.
+  No, our linear probing automatically accounts for a bias term. BTW, we normalize your embeddings $X$ by a global, overall mean shift and division by the corresponding standard deviation over all embedding values submitted.
 - [GH issue #2](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/2):
   *The pretraining dataset SSL4EO-S12-v1.1 contains metadata on georeferencing. May my encoder* $E$ *utilize such information for compression?*<br>
   No, the SSL4EO-S12-downstream dataset does not provide georeferencing information. The challenge intents to test lossy neural compression on multiple remote sensing modalities without geographic information.
@@ -73,4 +78,4 @@ No, you are free to collaborate as you prefer. However, keep in mind that you pr
 $Q_t=A_t/\Delta A_t$ one may interpret as a signal-to-noise ratio where $A_t$ is the mean accuracy of a given (secret) downstream task $t$ and $\Delta A_t$ specifies the fluctuation of $A_t$ when the linear probing function $f(X)=\hat y$ is trained multiple times through k-fold cross-validation. Technically, $Q_t\propto A_t/(\Delta A_t+\epsilon)$ with $\epsilon>0$ such that the maximum value of $Q_t$ is `100`. However, since we utilize $R^2$ for regression tasks, $Q_t$ may turn negative indicating that linear probing performs even worse than simply predicting the mean value of all labels for that downstream task.
 - *How are the non-competing baselines created?*<br>
 The `Baseline mean embeddings` is created with [baseline_compression_mean.ipynb](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/baseline_compression_mean.ipynb) and `Baseline random embeddings` is created with [demo_load_create_submission.ipynb](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/blob/main/data_loading_submission_demo/demo_load_create_submission.ipynb). The `Host_94421_Team` submissions can be both our own development as well as test submissions.
-
+- : *The seasonal order of data cubes in the `SSL4EO-S12-*` datasets is: spring, summer, fall, winter*?<br> Yes.
