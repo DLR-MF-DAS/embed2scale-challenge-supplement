@@ -7,7 +7,7 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-30 04:52:11
+Leaderboard updated: 2025-03-30 07:32:53
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -18,14 +18,15 @@ __Dev phase leaderboard__
 | 4 | Degas AI | 16.441 |
 | 5 | TeamGrelous | 15.908 |
 | 6 | Embeddie Murphy | 12.688 |
-| 7 | 7ry5ot21 | 8.496 |
-| 8 | EarthDaily Analytics | 7.191 |
-| 9 | GeoEmbedders | 5.464 |
-| 10 | Team\_Crumels | -0.549 |
-| 11 | Baseline mean embeddings | -2.298 |
-| 12 | Host\_94421\_Team | -1.570 |
-| 13 | TerraBytes\-OpenLab | -2.373 |
-| 14 | Baseline random embeddings | -8.924 |
+| 7 | onepack | 9.311 |
+| 8 | 7ry5ot21 | 8.496 |
+| 9 | EarthDaily Analytics | 7.191 |
+| 10 | GeoEmbedders | 5.464 |
+| 11 | Team\_Crumels | -0.549 |
+| 12 | Baseline mean embeddings | -2.298 |
+| 13 | Host\_94421\_Team | -1.570 |
+| 14 | TerraBytes\-OpenLab | -2.373 |
+| 15 | Baseline random embeddings | -8.924 |
 
 
 
