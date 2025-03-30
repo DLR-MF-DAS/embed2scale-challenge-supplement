@@ -7,25 +7,25 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-30 21:07:54
+Leaderboard updated: 2025-03-30 21:15:39
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
 | :----: | :---- | :------: |
 | 1 | AI4G Intern Squad | 19.947 |
-| 2 | KTH and Friends | 16.178 |
+| 2 | TeamGrelous | 19.668 |
 | 3 | Sexy Scholars | 17.530 |
-| 4 | Degas AI | 16.441 |
-| 5 | Embeddie Murphy | 12.688 |
-| 6 | onepack | 9.311 |
-| 7 | 7ry5ot21 | 8.496 |
-| 8 | EarthDaily Analytics | 7.191 |
-| 9 | GeoEmbedders | 5.464 |
-| 10 | Team\_Crumels | 3.420 |
-| 11 | TeamGrelous | 2.032 |
-| 12 | Host\_94421\_Team | -1.570 |
-| 13 | Baseline mean embeddings | -2.298 |
-| 14 | TerraBytes\-OpenLab | -2.373 |
+| 4 | KTH and Friends | 16.178 |
+| 5 | Degas AI | 16.441 |
+| 6 | Embeddie Murphy | 12.688 |
+| 7 | onepack | 9.311 |
+| 8 | 7ry5ot21 | 8.496 |
+| 9 | EarthDaily Analytics | 7.191 |
+| 10 | GeoEmbedders | 5.464 |
+| 11 | Team\_Crumels | 3.420 |
+| 12 | Baseline mean embeddings | -2.298 |
+| 13 | TerraBytes\-OpenLab | -2.373 |
+| 14 | Host\_94421\_Team | -1.570 |
 | 15 | Baseline random embeddings | -8.924 |
 
 
