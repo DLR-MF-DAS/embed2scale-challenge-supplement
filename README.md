@@ -7,7 +7,7 @@ The repository is structured as follows:
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
 
 # Leaderboard
-Leaderboard updated: 2025-03-30 21:49:20
+Leaderboard updated: 2025-03-31 14:11:39
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -26,7 +26,7 @@ __Dev phase leaderboard__
 | 12 | Baseline mean embeddings | -2.298 |
 | 13 | TerraBytes\-OpenLab | -2.373 |
 | 14 | Host\_94421\_Team | -1.570 |
-| 15 | Baseline random embeddings | -8.924 |
+| 15 | Baseline random embeddings | -8.800 |
 
 
 
