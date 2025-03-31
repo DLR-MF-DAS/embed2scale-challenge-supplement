@@ -12,6 +12,10 @@ Your scores will determine the final ranking to find our winners (cf. below). We
 
 In addition to the winner according to https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard we decided to also invite the solution with the highest `q_mean` score to present their solution at the CVPR EARTHVISION workshop. Each of the winning teams will receive a cash prize of 1k EUR as support to come to Nashville, TN, USA for the presentation. On April 7, 2025 we'll get in touch with the two winning teams through the email ID they provided to Eval.AI.
 
+### And even should you not win the thing ...
+
+... we are so grateful you participated! We are also very happy to link the code to your solution here. If you'd like so, pls open a corresponding issue here.
+
 # Embed2Scale Challenge - supplementary material
 Supplementary information for the [Embed2Scale (E2S) challenge](https://eval.ai/web/challenges/challenge-page/2465) as part of the [2025 CVPR EARTHVISION workshop](https://www.grss-ieee.org/events/earthvision-2025) co-organized by the Horizon Europe [Embed2Scale_ consortium](https://embed2scale.eu). This repo contains the (customized) leaderboard for the challenge, documentation, demos for loading and creating submissions, frequently asked questions based on GitHub issues you can open, and more.
 
