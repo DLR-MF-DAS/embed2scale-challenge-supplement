@@ -1,3 +1,17 @@
+# Leaderboard
+<!-- INSERT LEADERBOARD HERE -->
+
+# NEWS
+
+## Development Phase ended, Final Submission for Ranking ahead!
+
+The development phase closed. Now get ready to compress approx. 90GB from https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream/tree/main/data_eval (available for download Apr 1) for submission starting Apr 3 through Apr 5.
+Your scores will determine the final ranking to find our winners (cf. below). We are excited about your solution, all the best luck!
+
+## about CVPR EARTHVISION winners
+
+In addition to the winner according to https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard we decided to also invite the solution with the highest `q_mean` score to present their solution at the CVPR EARTHVISION workshop. Each of the winning teams will receive a cash prize of 1k EUR as support to come to Nashville, TN, USA for the presentation. On April 7, 2025 we'll get in touch with the two winning teams through the email ID they provided to Eval.AI.
+
 # Embed2Scale Challenge - supplementary material
 Supplementary information for the [Embed2Scale (E2S) challenge](https://eval.ai/web/challenges/challenge-page/2465) as part of the [2025 CVPR EARTHVISION workshop](https://www.grss-ieee.org/events/earthvision-2025) co-organized by the Horizon Europe [Embed2Scale_ consortium](https://embed2scale.eu). This repo contains the (customized) leaderboard for the challenge, documentation, demos for loading and creating submissions, frequently asked questions based on GitHub issues you can open, and more.
 
@@ -5,9 +19,6 @@ The repository is structured as follows:
 - The Embed2Scale Challenge leaderboard is presented below, ranked by aggregating the rankings on the individual downstream tasks. Please refer to [here](https://eval.ai/web/challenges/challenge-page/2465/evaluation) for details on the evaluation and ranking.
 - `data_loading_submission_demo/`: Contains Jupyter notebooks detailing how the challenge data can be loaded and how the embeddings can be structured into a submission file to be ready for submission on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/evaluation).
 - `figs/`: Images and supplementary files for the competition. Nothing useful that isn't written here or on [eval.ai](https://eval.ai/web/challenges/challenge-page/2465/overview).
-
-# Leaderboard
-<!-- INSERT LEADERBOARD HERE -->
 
 ## FAQ
 
