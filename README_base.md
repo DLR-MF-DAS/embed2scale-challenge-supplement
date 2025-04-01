@@ -22,6 +22,8 @@ For the independent ranking based on the `q_mean` score, the best of your (up to
 
 **public** as in not parked private on the Eval.AI platform on submission
 
+<img src="figs/public_submission_screenshot.png" width="500">
+
 
 ### And even should you not win the thing ...
 
