@@ -1,5 +1,5 @@
 # Leaderboard
-Leaderboard updated: 2025-04-01 16:02:07
+Leaderboard updated: 2025-04-01 16:55:39
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -42,7 +42,7 @@ Just to clarify: The winning solution on the leaderboard will be determined by t
 For the independent ranking based on the `q_mean` score, the best of your (up to) three **public** submissions counts according to the [Eval.AI leaderboard](https://eval.ai/web/challenges/challenge-page/2465/leaderboard/6117).
 
 In summary, after the evaluation phase ended on Apr 5, 2025 we will contact the two winning teams on Apr 7, 2025 through their email specified on the Eval.AI platform according to:
-- 1k EUR for the 1st ranked in https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard
+- 1k EUR for the 1st ranked in https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard (_Test phase_ leaderboard, not _Dev phase_)
 - 1k EUR for the 1st ranked in https://eval.ai/web/challenges/challenge-page/2465/leaderboard/6117
 
 Moreover, for a winning team it is mandatory to have participated in the development phase that happened Mar 10 through Mar 31, 2025. _Participation_ is defined as having registered with a valid email for https://eval.ai/web/challenges/challenge-page/2465 before April 1, 2025 and having submitted at least one successfully evaluated (marked as _Finished_), private or **public** submission.  
