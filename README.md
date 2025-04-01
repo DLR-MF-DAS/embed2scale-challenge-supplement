@@ -1,5 +1,5 @@
 # Leaderboard
-Leaderboard updated: 2025-03-31 16:00:49
+Leaderboard updated: 2025-04-01 15:46:18
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -28,12 +28,29 @@ Note that `Host_94421_Team`, `Baseline mean embeddings` and `Baseline random emb
 
 ## Development Phase ended, Final Submission for Ranking ahead!
 
-The development phase closed. Now get ready to compress approx. 90GB from https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream/tree/main/data_eval (available for download Apr 1) for submission starting Apr 3 through Apr 5.
+The development phase closed. Now get ready to compress approx. 90GB from https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream/tree/main/data_eval (available for download starting Apr 1, 2025) for submission starting Apr 3 through Apr 5.
 Your scores will determine the final ranking to find our winners (cf. below). We are excited about your solution, all the best luck!
 
-## about CVPR EARTHVISION winners
+## About CVPR EARTHVISION winners
 
 In addition to the winner according to https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard we decided to also invite the solution with the highest `q_mean` score to present their solution at the CVPR EARTHVISION workshop. Each of the winning teams will receive a cash prize of 1k EUR as support to come to Nashville, TN, USA for the presentation. On April 7, 2025 we'll get in touch with the two winning teams through the email ID they provided to Eval.AI.
+
+### Attention regarding the submission that counts
+
+Just to clarify: The winning solution on the leaderboard will be determined by the **last public** one that you will have submitted in the period Apr 3-5, 2025. This is due to the nature how our global ranking works.
+
+For the independent ranking based on the `q_mean` score, the best of your (up to) three **public** submissions counts according to the [Eval.AI leaderboard](https://eval.ai/web/challenges/challenge-page/2465/leaderboard/6117).
+
+In summary, after the evaluation phase ended on Apr 5, 2025 we will contact the two winning teams on Apr 7, 2025 through their email specified on the Eval.AI platform according to:
+- 1k EUR for the 1st ranked in https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard
+- 1k EUR for the 1st ranked in https://eval.ai/web/challenges/challenge-page/2465/leaderboard/6117
+---
+
+**public** as selected on submission time through the Eval.AI platform:
+
+<img src="figs/public_submission_screenshot.png" width="500">
+
+Note that you have a total of 3 submission in Apr 3-5, 2025 - whether private or **public**. We recommend you exclusively submit with option **public**.
 
 ### And even should you not win the thing ...
 
