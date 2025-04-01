@@ -10,7 +10,7 @@ Your scores will determine the final ranking to find our winners (cf. below). We
 
 ## About CVPR EARTHVISION winners
 
-In addition to the winner according to https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard we decided to also invite the solution with the highest `q_mean` score to present their solution at the CVPR EARTHVISION workshop. Each of the winning teams will receive a cash prize of 1k EUR as support to come to Nashville, TN, USA for the presentation. On April 7, 2025 we'll get in touch with the two winning teams through the email ID they provided to Eval.AI.
+In addition to the winner according to https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard we decided to also invite the solution with the highest `q_mean` score to present their solution at the CVPR EARTHVISION workshop. Each of the winning teams will receive a cash prize of 1k EUR as support to come to Nashville, TN, USA for the presentation. On April 7, 2025 we'll get in touch with the two winning teams through the email ID they provided to Eval.AI. **Teams that participated in the development phase are the only ones eligible to count as valid winners of the final test phase.**
 
 ### Attention regarding the submission that counts
 
@@ -21,6 +21,9 @@ For the independent ranking based on the `q_mean` score, the best of your (up to
 In summary, after the evaluation phase ended on Apr 5, 2025 we will contact the two winning teams on Apr 7, 2025 through their email specified on the Eval.AI platform according to:
 - 1k EUR for the 1st ranked in https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard
 - 1k EUR for the 1st ranked in https://eval.ai/web/challenges/challenge-page/2465/leaderboard/6117
+
+Moreover, for a winning team it is mandatory to have participated in the development phase that happened Mar 10 through Mar 31, 2025. _Participation_ is defined as having registered with a valid email for https://eval.ai/web/challenges/challenge-page/2465 before April 1, 2025 and having submitted at least one successfully evaluated (marked as _Finished_), private or **public** submission.  
+
 ---
 
 **public** as selected on submission time through the Eval.AI platform:
