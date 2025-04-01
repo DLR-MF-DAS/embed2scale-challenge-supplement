@@ -22,7 +22,9 @@ In summary, after the evaluation phase ended on Apr 5, 2025 we will contact the 
 - 1k EUR for the 1st ranked in https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard (_Test phase_ leaderboard, not _Dev phase_)
 - 1k EUR for the 1st ranked in https://eval.ai/web/challenges/challenge-page/2465/leaderboard/6117
 
-Moreover, for a winning team it is mandatory to have participated in the development phase that happened Mar 10 through Mar 31, 2025. _Participation_ is defined as having registered with a valid email for https://eval.ai/web/challenges/challenge-page/2465 before April 1, 2025 and having submitted at least one successfully evaluated (marked as _Finished_), private or **public** submission.  
+Moreover, for a winning team it is mandatory to have participated in the development phase that happened Mar 10 through Mar 31, 2025. _Participation_ is defined as having registered with a valid email for https://eval.ai/web/challenges/challenge-page/2465 before April 1, 2025 and having submitted at least one successfully evaluated (marked as _Finished_), private or **public** submission.
+
+Also, we require the winning teams to open-source their (neural) compressor code under https://www.apache.org/licenses/LICENSE-2.0 . We demand that the embeddings corresponding to the submitted, winning solution can be transparently reproduced.
 
 ---
 
