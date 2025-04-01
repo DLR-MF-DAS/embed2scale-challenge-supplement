@@ -8,7 +8,7 @@
 The development phase closed. Now get ready to compress approx. 90GB from https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream/tree/main/data_eval (available for download starting Apr 1, 2025) for submission starting Apr 3 through Apr 5.
 Your scores will determine the final ranking to find our winners (cf. below). We are excited about your solution, all the best luck!
 
-## about CVPR EARTHVISION winners
+## About CVPR EARTHVISION winners
 
 In addition to the winner according to https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard we decided to also invite the solution with the highest `q_mean` score to present their solution at the CVPR EARTHVISION workshop. Each of the winning teams will receive a cash prize of 1k EUR as support to come to Nashville, TN, USA for the presentation. On April 7, 2025 we'll get in touch with the two winning teams through the email ID they provided to Eval.AI.
 
