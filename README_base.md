@@ -12,6 +12,17 @@ Your scores will determine the final ranking to find our winners (cf. below). We
 
 In addition to the winner according to https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard we decided to also invite the solution with the highest `q_mean` score to present their solution at the CVPR EARTHVISION workshop. Each of the winning teams will receive a cash prize of 1k EUR as support to come to Nashville, TN, USA for the presentation. On April 7, 2025 we'll get in touch with the two winning teams through the email ID they provided to Eval.AI.
 
+### Attention regarding the submission that counts
+
+Just to clarify: The winning solution on the leaderboard will be determined by the **last public** one that you will have submitted in the period Apr 3-5, 2025. This is due to the nature how our global ranking works.
+
+For the independent ranking based on the `q_mean` score, the best of your (up to) three **public** submissions counts according to the [Eval.AI leaderboard](https://eval.ai/web/challenges/challenge-page/2465/leaderboard/6117).
+
+---
+
+**public** as in not parked private on the Eval.AI platform on submission
+
+
 ### And even should you not win the thing ...
 
 ... we are so grateful you participated! We are also very happy to link the code to your solution here. If you'd like so, pls open a corresponding issue here.
