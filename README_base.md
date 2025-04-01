@@ -18,9 +18,12 @@ Just to clarify: The winning solution on the leaderboard will be determined by t
 
 For the independent ranking based on the `q_mean` score, the best of your (up to) three **public** submissions counts according to the [Eval.AI leaderboard](https://eval.ai/web/challenges/challenge-page/2465/leaderboard/6117).
 
+In summary, after the evaluation phase ended on Apr 5, 2025 we will contact the two winning teams on Apr 7, 2025 through their email specified on the Eval.AI platform according to:
+- 1k EUR for the 1st ranked in https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement?tab=readme-ov-file#leaderboard
+- 1k EUR for the 1st ranked in https://eval.ai/web/challenges/challenge-page/2465/leaderboard/6117
 ---
 
-**public** as in not parked private on the Eval.AI platform on submission
+**public** as selected on submission time through the Eval.AI platform:
 
 <img src="figs/public_submission_screenshot.png" width="500">
 
