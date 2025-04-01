@@ -27,6 +27,7 @@ In summary, after the evaluation phase ended on Apr 5, 2025 we will contact the 
 
 <img src="figs/public_submission_screenshot.png" width="500">
 
+Note that you have a total of 3 submission in Apr 3-5, 2025 - whether private or **public**. We recommend you exclusively submit with option **public**.
 
 ### And even should you not win the thing ...
 
