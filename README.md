@@ -1,12 +1,13 @@
 # Leaderboard
-Leaderboard updated: 2025-04-03 11:09:15
+Leaderboard updated: 2025-04-03 14:26:40
 
 __Test phase leaderboard__
 | Rank | Team | Mean Q |
 | :----: | :---- | :------: |
-| 1 | GTHAU | 1.942 |
-| 2 | Baseline mean embeddings | -0.786 |
-| 3 | Baseline random embeddings | -7.092 |
+| 1 | KTH and Friends | 15.026 |
+| 2 | GTHAU | 1.942 |
+| 3 | Baseline mean embeddings | -0.786 |
+| 4 | Baseline random embeddings | -7.092 |
 
 
 
