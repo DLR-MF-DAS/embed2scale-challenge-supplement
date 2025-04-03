@@ -1,10 +1,10 @@
 # Leaderboard
-Leaderboard updated: 2025-04-03 09:31:56
+Leaderboard updated: 2025-04-03 09:51:14
 
 __Test phase leaderboard__
 | Rank | Team | Mean Q |
 | :----: | :---- | :------: |
-| 1 | Baseline mean embeddings | -0.873 |
+| 1 | Baseline mean embeddings | -0.786 |
 | 2 | Baseline random embeddings | -7.092 |
 
 
