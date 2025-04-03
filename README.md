@@ -1,5 +1,5 @@
 # Leaderboard
-Leaderboard updated: 2025-04-01 17:07:02
+Leaderboard updated: 2025-04-03 05:17:04
 
 __Dev phase leaderboard__
 | Rank | Team | Mean Q |
@@ -12,13 +12,12 @@ __Dev phase leaderboard__
 | 6 | Embeddie Murphy | 12.688 |
 | 7 | onepack | 9.311 |
 | 8 | 7ry5ot21 | 8.496 |
-| 9 | EarthDaily Analytics | 7.191 |
-| 10 | GeoEmbedders | 5.464 |
-| 11 | Team\_Crumels | 3.420 |
-| 12 | Baseline mean embeddings | -2.298 |
-| 13 | TerraBytes\-OpenLab | -2.373 |
-| 14 | Host\_94421\_Team | -1.570 |
-| 15 | Baseline random embeddings | -8.800 |
+| 9 | GeoEmbedders | 5.464 |
+| 10 | Team\_Crumels | 3.420 |
+| 11 | Baseline mean embeddings | -2.298 |
+| 12 | TerraBytes\-OpenLab | -2.373 |
+| 13 | Host\_94421\_Team | -1.570 |
+| 14 | Baseline random embeddings | -8.800 |
 
 
 
