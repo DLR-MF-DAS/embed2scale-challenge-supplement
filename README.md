@@ -1,11 +1,11 @@
 # Leaderboard
-Leaderboard updated: 2025-04-03 14:58:07
+Leaderboard updated: 2025-04-03 15:50:50
 
 __Test phase leaderboard__
 | Rank | Team | Mean Q |
 | :----: | :---- | :------: |
 | 1 | KTH and Friends | 15.026 |
-| 2 | AI4G Intern Squad | 12.335 |
+| 2 | AI4G Intern Squad | 12.797 |
 | 3 | GTHAU | 1.942 |
 | 4 | Baseline mean embeddings | -0.786 |
 | 5 | Baseline random embeddings | -7.092 |
