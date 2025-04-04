@@ -1,5 +1,5 @@
 # Leaderboard
-Leaderboard updated: 2025-04-04 06:14:44
+Leaderboard updated: 2025-04-04 06:54:19
 
 __Test phase leaderboard__
 | Rank | Team | Mean Q |
@@ -8,9 +8,10 @@ __Test phase leaderboard__
 | 2 | 404 Embedding Not Found | 14.659 |
 | 3 | AI4G Intern Squad | 12.797 |
 | 4 | Sexy Scholars | 11.217 |
-| 5 | GTHAU | 1.942 |
-| 6 | Baseline mean embeddings | -0.786 |
-| 7 | Baseline random embeddings | -7.092 |
+| 5 | Degas AI | 9.221 |
+| 6 | GTHAU | 1.942 |
+| 7 | Baseline mean embeddings | -0.786 |
+| 8 | Baseline random embeddings | -7.092 |
 
 
 
