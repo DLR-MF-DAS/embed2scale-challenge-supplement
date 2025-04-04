@@ -1,5 +1,5 @@
 # Leaderboard
-Leaderboard updated: 2025-04-04 07:16:38
+Leaderboard updated: 2025-04-04 11:05:32
 
 __Test phase leaderboard__
 | Rank | Team | Mean Q |
@@ -9,7 +9,7 @@ __Test phase leaderboard__
 | 3 | AI4G Intern Squad | 12.797 |
 | 4 | Sexy Scholars | 11.217 |
 | 5 | Degas AI | 4.701 |
-| 6 | GTHAU | 1.942 |
+| 6 | GTHAU | 3.728 |
 | 7 | Baseline mean embeddings | -0.786 |
 | 8 | Baseline random embeddings | -7.092 |
 
