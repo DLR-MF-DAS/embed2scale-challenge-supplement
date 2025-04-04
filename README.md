@@ -1,11 +1,11 @@
 # Leaderboard
-Leaderboard updated: 2025-04-04 22:30:05
+Leaderboard updated: 2025-04-04 23:35:59
 
 __Test phase leaderboard__
 | Rank | Team | Mean Q |
 | :----: | :---- | :------: |
 | 1 | 404 Embedding Not Found | 14.874 |
-| 2 | KTH and Friends | 15.026 |
+| 2 | KTH and Friends | 15.225 |
 | 3 | TeamGrelous | 13.028 |
 | 4 | AI4G Intern Squad | 12.797 |
 | 5 | Degas AI | 12.594 |
