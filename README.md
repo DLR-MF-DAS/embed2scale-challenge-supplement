@@ -1,17 +1,18 @@
 # Leaderboard
-Leaderboard updated: 2025-04-04 11:05:32
+Leaderboard updated: 2025-04-04 14:25:06
 
 __Test phase leaderboard__
 | Rank | Team | Mean Q |
 | :----: | :---- | :------: |
 | 1 | KTH and Friends | 15.026 |
 | 2 | 404 Embedding Not Found | 14.659 |
-| 3 | AI4G Intern Squad | 12.797 |
-| 4 | Sexy Scholars | 11.217 |
-| 5 | Degas AI | 4.701 |
-| 6 | GTHAU | 3.728 |
-| 7 | Baseline mean embeddings | -0.786 |
-| 8 | Baseline random embeddings | -7.092 |
+| 3 | Sexy Scholars | 11.217 |
+| 4 | AI4G Intern Squad | 12.797 |
+| 5 | TeamGrelous | 9.226 |
+| 6 | Degas AI | 4.701 |
+| 7 | GTHAU | 3.728 |
+| 8 | Baseline mean embeddings | -0.786 |
+| 9 | Baseline random embeddings | -7.092 |
 
 
 
