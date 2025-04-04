@@ -1,5 +1,5 @@
 # Leaderboard
-Leaderboard updated: 2025-04-04 19:31:18
+Leaderboard updated: 2025-04-04 21:22:46
 
 __Test phase leaderboard__
 | Rank | Team | Mean Q |
@@ -9,10 +9,11 @@ __Test phase leaderboard__
 | 3 | TeamGrelous | 13.028 |
 | 4 | AI4G Intern Squad | 12.797 |
 | 5 | Sexy Scholars | 11.217 |
-| 6 | Degas AI | 4.701 |
-| 7 | GTHAU | 3.728 |
-| 8 | Baseline mean embeddings | -0.786 |
-| 9 | Baseline random embeddings | -7.092 |
+| 6 | 7ry5ot21 | 6.307 |
+| 7 | Degas AI | 4.701 |
+| 8 | GTHAU | 3.728 |
+| 9 | Baseline mean embeddings | -0.786 |
+| 10 | Baseline random embeddings | -7.092 |
 
 
 
