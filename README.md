@@ -1,5 +1,5 @@
 # Leaderboard
-Leaderboard updated: 2025-04-04 23:35:59
+Leaderboard updated: 2025-04-05 00:05:32
 
 __Test phase leaderboard__
 | Rank | Team | Mean Q |
@@ -11,9 +11,10 @@ __Test phase leaderboard__
 | 5 | Degas AI | 12.594 |
 | 6 | Sexy Scholars | 11.217 |
 | 7 | 7ry5ot21 | 6.233 |
-| 8 | GTHAU | 3.728 |
-| 9 | Baseline mean embeddings | -0.786 |
-| 10 | Baseline random embeddings | -7.092 |
+| 8 | Team\_Crumels | 3.960 |
+| 9 | GTHAU | 3.728 |
+| 10 | Baseline mean embeddings | -0.786 |
+| 11 | Baseline random embeddings | -7.092 |
 
 
 
