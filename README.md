@@ -44,7 +44,7 @@ Note that `Host_94421_Team`, `Baseline mean embeddings` and `Baseline random emb
 
 ## Development Phase ended, Final Submission for Ranking ahead!
 
-The development phase closed. Now get ready to compress approx. 90GB from https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream/tree/main/data_eval (available for download starting Apr 1, 2025) for submission starting Apr 3 through Apr 5.
+The development phase closed. Now get ready to compress approx. 90GB from https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream/tree/5c5539acd6f42e2e3547ec816fcf577e3f6800fa/data_eval (available for download starting Apr 1, 2025) for submission starting Apr 3 through Apr 5.
 Your scores will determine the final ranking to find our winners (cf. below). We are excited about your solution, all the best luck!
 
 ## About CVPR EARTHVISION winners
