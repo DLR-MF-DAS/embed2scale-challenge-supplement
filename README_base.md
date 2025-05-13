@@ -53,7 +53,7 @@ In case you have question, please open an issue here. Below a list of insights f
 - [GH issue #1](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/1) and [GH issue #13](https://github.com/DLR-MF-DAS/embed2scale-challenge-supplement/issues/13): relevant datasets $D^{(\ast)}$ on HuggingFace:<br>
     * *SSL4EO-S12-v1.1*: pre-training of your encoder $E(D)=X=(x_1,x_2,\dots,x_{1024})$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-v1.1
       + timestamp metadata info in ZARR files, seasons in linear order in range of years 2020 to 2021
-    * *SSL4EO-S12-downstream*: downstream evaluation $f(X)=f\left(E(D^\ast)\right)=a_0+\sum_ia_ix_i=\hat y$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream , timestamp ordering in buckets of months of the year:
+    * *SSL4EO-S12-downstream*: downstream evaluation $f(X)=f\left(E(D^\ast)\right)=a_0+\sum_ia_ix_i=\hat y$: https://huggingface.co/datasets/embed2scale/SSL4EO-S12-downstream/tree/5c5539acd6f42e2e3547ec816fcf577e3f6800fa , timestamp ordering in buckets of months of the year:
       1. *spring* (northern hemisphere): Mar - May
       2. *summer*: Jun - Aug
       3. *fall*: Sep - Nov
